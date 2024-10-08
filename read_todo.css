@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+.submit {
+    margin-left: 6vh;
+    /* opacity: 0; */
+    background-color: rgb(37, 99, 235);
+    /* font-size: 2vh; */
+}
+
+.submit:hover {
+    background-color: rgb(49, 114, 255);
+}
+
+.imageOfUser {}
+
+.deleteTodo {
+    margin-left: 6vh;
+    color: white;
+    background-color: rgb(235, 37, 37);
+    width: 18vh;
+    height: 6vh;
+    border: none;
+    border-radius: 1vh;
+    font-size: 3vh;
+    cursor: pointer;
+    transition: 0.1s;
+}

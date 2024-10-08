@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your todos</title>
+    <link rel="stylesheet" href="./show_todo.css">
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="mainBody">
+    <div class="container ">
+        <div class="nav">
+            <div class="left">
+                <div class="logo">Keep Notes</div>
+
+            </div>
+            <div class="right">
+                <div class="nameOfUser">Name</div>
+                <!-- <div class="threeDots"><i class="fa-solid fa-bars"></i></div> -->
+                <div id="sidebar" class="sidebar">
+                    <!-- Sidebar content here -->
+                    <p class="deleteAccount">Delete your account</p>
+                </div>
+                <div class="three-dots" id="threeDots">
+                    <i class="fa-solid fa-bars"></i> <!-- Font Awesome three-dot icon -->
+                </div>
+            </div>
+        </div>
+        <div class="body">
+
+            <div class="top">
+                <div class="topInput">
+                    <p class="popOut">Log in to create todos!</p>
+                    <input class="title" type="text" placeholder="Title goes here" name="title">
+                    <textarea class="description" type="text" placeholder="Description goes here"
+                        name="details"></textarea>
+                    <input type="submit" class="submit" value="Create">
+                </div>
+
+                <div class="details">
+                    <p class="noText"></p>
+                    <div class="allTodos">
+
+                        <!-- <div class="todoBox">
+                            <div class="todoHead">
+                                <div class="noteTitle">${e.title}</div>
+                                <div class="editIcon"><i class="fa-solid fa-pen-to-square"></i></div>
+                            </div>
+                            <div class="todoBody">
+                                <p class="readmore">Read more.</p>
+                            </div>
+                        </div> -->
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="module" src="./showTodo.js"></script>
+</body>
+
+</html>
