@@ -49,7 +49,7 @@ deleteAccount.addEventListener("click", async () => {
                 // console.log(response)
 
                 alert("User deleted successfull!");
-                window.location = "./first_page.html"
+                window.location = "./index.html"
                 return;
             }
             else {
@@ -73,7 +73,7 @@ async function getTodos() {
     const obj = {};
     const token = localStorage.getItem("token");
     const name = localStorage.getItem("name");
-   caches
+    caches
     // console.log(token)
     try {
         const response = await fetch("http://localhost:3000/todos", {
