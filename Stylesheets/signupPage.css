@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    background-color: rgb(24, 24, 27);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.noError{
+    margin-top: 3vh;
+    color: rgb(255, 255, 255);
+    background-color: rgb(114, 33, 33);
+    padding: 2vh; 
+    border-radius: 1vh;
+    display: none;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(56, 56, 59);
+    padding-inline: 6vh;
+    padding-bottom: 3vh;
+
+    /* padding: 10vh 5vh; */
+    border-radius: 3vh;
+}
+
+.name,
+.email,
+.password,
+.ConfirmPassword {
+    margin-bottom: 2vh;
+    width: 50vh;
+    height: 6vh;
+    padding-left: 2vh;
+    border-radius: 1vh;
+    outline: none;
+    border: .5vh solid transparent;
+    font-size: 2.5vh;
+
+}
+
+.submit {
+    margin-bottom: 2vh;
+    /* width: 50vh; */
+    height: 8vh;
+    background-color: rgb(220, 113, 0);
+    border-radius: 1vh;
+    cursor: pointer;
+    border: none;
+
+}
+
+.head {
+    margin-block: 5vh;
+    text-align: center;
+    color: white;
+    font-size: 4vh;
+}
+
+.text {
+    color: white;
+    margin-left: 1vh;
+}
+
+.loginButton {
+    color: rgb(178, 178, 255);
+    font-size: 2.3vh;
+    transition: 0.1s;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    /* text-decoration: underline; */
+}
+
+.loginButton:hover {
+    color: rgb(130, 130, 190);
+}
+
+/* 
+.error {
+    color: rgb(255, 83, 83);
+    margin-bottom: 1vh;
+    margin-left: 0.2vh;
+} */
+
+.box label {
+    margin-bottom: 1vh;
+    font-size: 2.5vh;
+    font-weight: 600;
+
+    color: rgb(255, 197, 197);
+
+}
+
+.password_error,
+.email_error,
+.confirm_error,
+.name_error {
+    color: rgb(255, 140, 140);
+    margin-bottom: 1vh;
+    /* opacity: 0; */
+    display: none;
+}
+
+.adjust {
+    margin-bottom: 1vh;
+    font-size: 1vh;
+    font-weight: 600;
+    opacity: 0;
+}
+
+.popOut {
+    /* display: flex; */
+    position: fixed;
+    left: 40%;
+    top: -18vh;
+    background-color: #fff;
+    padding: 2vh 9vh;
+    border-radius: 1vh;
+    font-size: 2.8vh;
+    transition: top 0.3s ease;
+    /* Add the bounce animation */
+}
+
+/* .center {
+    margin-right: 35vh;
+    padding: 2vh 4vh;
+} */
+
+.popOut.active {
+    top: 12vh;
+    animation: bounceIn 0.6s ease forwards;
+}
+
+@keyframes bounceIn {
+    0% {
+        top: -8vh;
+        /* Start above the screen */
+    }
+
+    60% {
+        top: 10vh;
+        /* First bounce down */
+    }
+
+    75% {
+        top: 8vh;
+        /* Bounce up slightly */
+    }
+
+    90% {
+        top: 10vh;
+        /* Second bounce down */
+    }
+
+    100% {
+        top: 9vh;
+        /* Settle in final position */
+    }
+}
