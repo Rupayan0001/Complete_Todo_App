@@ -33,7 +33,7 @@ logo.addEventListener("click", () => {
     window.location = "./show_todo.html"
 })
 
-nameOfUser.textContent = `${getCurrentTimeStatus()}, ${Username}`;
+nameOfUser.textContent = `${getCurrentTimeStatus()}," " ${Username.spliT(" ")[0]}`;
 
 threeDots.addEventListener('click', () => {
     threeDots.classList.toggle("on")
