@@ -246,7 +246,7 @@
 }
 
 .three-dots {
-    font-size: 24px;
+    font-size: 3vh;
     cursor: pointer;
     position: absolute;
     top: 22px;
@@ -446,10 +446,10 @@
 
 /* Very Tall Screens (e.g., tablets) */
 @media (min-height: 800px) {
-    .three-dots {
+/*     .three-dots {
         font-size: 28px;
         top: 24px;
-    }
+    } */
 
     .todoBox {
         padding: 3vh;
