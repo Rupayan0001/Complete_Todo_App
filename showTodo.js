@@ -180,10 +180,9 @@ async function getTodos() {
         return;
     }
 }
-getTodos()
+getTodos();
 
-
-submit.addEventListener("click", async () => {
+async function addTodo {
     if (title.value === "" || description.value === "") {
         popOut.classList.add("active");
         popOut.textContent = "Both the fields are required";
@@ -225,5 +224,13 @@ submit.addEventListener("click", async () => {
         // console.log(error)
         return;
     }
+}
+
+submit.addEventListener("click", addTodo)
+document.addEventListener("keydown", (e)=>{
+    if(e.key === "Enter"){
+        addTodo();
+    }
+    
 })
 
