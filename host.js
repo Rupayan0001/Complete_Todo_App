@@ -1,3 +1,3 @@
-const host = "https://complete-todo-app-backend-1.onrender.com";
+const host = "https://complete-todo-app-backend.onrender.com";
 
 export default host;
