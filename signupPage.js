@@ -14,8 +14,15 @@ const passwordError = document.querySelector(".password_error")
 const popOut = document.querySelector(".popOut")
 const noError = document.querySelector(".noError")
 
+document.addEventListener("keydown", (e)=>{
+    if(e.key === "Enter"){
+        getSignup();
+    }
+    
+})
+submit.addEventListener("click", getSignup)
 
-submit.addEventListener("click", () => {
+function getSignup() {
     if (username.value === "") {
         username.style.border = ".5vh solid red";
         nameError.style.display = "block"
@@ -88,7 +95,9 @@ submit.addEventListener("click", () => {
         }
     }
 
-})
+}
+
+
 confirmPassword.addEventListener("click", () => {
     confirmPassword.style.border = ".5vh solid transparent";
 })
