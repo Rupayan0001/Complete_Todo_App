@@ -11,8 +11,14 @@ const emailError = document.querySelector(".email_error")
 const passwordError = document.querySelector(".password_error")
 const popOut = document.querySelector(".popOut")
 
+document.addEventListener("keydown", (e)=>{
+    if(e.key === "Enter"){
+        getLogin();
+    }
+})
+submit.addEventListener("click", getLogin)
 
-submit.addEventListener("click", () => {
+function getLogin() {
 
     if (email.value === "") {
         email.style.border = ".5vh solid red"
@@ -66,7 +72,7 @@ submit.addEventListener("click", () => {
         login();
     }
 
-})
+}
 
 password.addEventListener("click", () => {
     password.style.border = ".5vh solid transparent";
