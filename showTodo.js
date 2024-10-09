@@ -182,7 +182,7 @@ async function getTodos() {
 }
 getTodos();
 
-async function addTodo {
+async function addTodo () {
     if (title.value === "" || description.value === "") {
         popOut.classList.add("active");
         popOut.textContent = "Both the fields are required";
