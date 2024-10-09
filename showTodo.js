@@ -33,7 +33,7 @@ logo.addEventListener("click", () => {
     window.location = "./show_todo.html"
 })
 
-nameOfUser.textContent = `${getCurrentTimeStatus()}," " ${Username.split(" ")[0]}`;
+nameOfUser.textContent = `${getCurrentTimeStatus()},  ${Username.split(" ")[0]}`;
 
 threeDots.addEventListener('click', () => {
     threeDots.classList.toggle("on")
@@ -226,11 +226,6 @@ async function addTodo () {
     }
 }
 
-submit.addEventListener("click", addTodo)
-document.addEventListener("keydown", (e)=>{
-    if(e.key === "Enter"){
-        addTodo();
-    }
-    
-})
+submit.addEventListener("click", addTodo);
+
 
