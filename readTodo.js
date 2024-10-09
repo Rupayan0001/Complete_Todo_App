@@ -20,7 +20,7 @@ const Username = localStorage.getItem("name");
 
 title.value = getIt.title;
 description.value = getIt.description;
-nameOfUser.textContent = `${getCurrentTimeStatus()}," " ${Username.spliT(" ")[0]}`;
+nameOfUser.textContent = `${getCurrentTimeStatus()}," " ${Username.split(" ")[0]}`;
 
 logo.addEventListener("click", () => {
     window.location = "./show_todo.html"
