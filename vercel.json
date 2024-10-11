@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "destination": "https://complete-todo-app-git-main-rupayan0001s-projects.vercel.app/$1",
+      "permanent": true
+    }
+  ]
+}
